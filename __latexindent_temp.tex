@@ -188,7 +188,7 @@ Important to note is that there exists a technology similar to PWA, so-called hy
 
 PWA has been called “the future of mobile applications”, that it will take over the mobile landscape \cite{casestudies_mia, futureofweb_claim1}. Even with a potentially promising future, published research on PWA is mainly about a small number of topics, such as its performance and size in comparison to native applications. It proves a challenge to find research related to topics such as the rate of adoption, how widespread the knowledge about the technique is, and general insights into the attitudes towards the technique in the industry. Causes for, and solutions to, issues related to these areas are as you might expect also mostly absent because of this.
 
-\subsection{Related work}
+\subsection{Related Work}
 In 2016, Steczko investigated the differences that exist between native and cross-platform development. He interviewed several companies about their experiences and opinions on the two development alternatives, concluding that the preferred option was native but that both alternatives have their pros and cons \cite{thesis_steczko}. Cross-platform development in a general sense was investigated, but since PWA as a mobile application development technique was almost unknown at the time, it is never mentioned in the report.
 
 In 2020, Olsson and Gustafsson investigated the differences between PWA and native development, extending the work done four years prior by Steczko by conducting similar interviews but instead focusing on PWA rather than general cross-platform development. They also extended the research by using a tool to determine the rate of adoption in Swedish companies, concluding that PWA is drastically under-utilized \cite{thesis_sverige}.
@@ -292,7 +292,7 @@ The industry survey is to be split into two separate parts. The first part conta
 
 Before the surveys can be conducted, a selection of companies to be participants in the surveys needs to be made. This selection process will include selecting companies from different sectors to improve the diversity of participants, but of note is that this might prove to be ineffective. The reason is that companies from different industries have a differing likelihood of having developed applications in-house, so the end result will most likely still be somewhat one-sided. Companies that have no experience in developing applications in-house are still of interest to this project, as they can still answer the first part of the survey. If a company is willing to participate, they will be asked to forward the survey to the relevant person(s) in the company to answer in their free time. A scheduled phone interview is also possible if necessary.
 
-The survey to be conducted in the education sector will be limited to only include professors from Swedish universities. The ten (10) largest universities in the country will be selected, and then professors from these universities that teach in courses related to web development and design will be contacted.
+The survey to be conducted in the education sector will be limited to only include professors from Swedish universities. The ten largest universities in the country will be selected, and then professors from these universities that teach in courses related to web development and design will be contacted.
 
 Surveys were chosen as the primary method for obtaining data since they allow for easier collection of larger amounts of data. Purely doing interviews over the phone, or some other voice-communication medium, require more time and might therefore result in fewer participants. The survey was also deemed more fitting for having a mix of quantitative and qualitative questions, which for this project is desirable.
 
@@ -318,7 +318,7 @@ Which parties choose to participate in the survey might result in a bias emergin
 \newpage
 
 \section{Theoretical Background}
-This Chapter describes in more detail the concepts of responsive web design, mobile applications, and different cross-platform development technologies and techniques. Understanding these concepts and how they related to each other is helpful for understanding the design of the survey and the results it produced.
+This chapter describes in more detail the concepts of responsive web design, mobile applications, and different cross-platform development technologies and techniques. Understanding these concepts and how they related to each other is helpful for understanding the design of the survey and the results it produced.
 
 \subsection{Responsive Web Design}
 From a visual perspective, there exist two distinct types of websites; fixed-width websites and responsive websites. Before smartphones became popular, websites were typically designed around a minimum target resolution by using fixed sizes for all its elements, often expressed in a number of pixels \cite{resp_web_2011}. This type of website is not capable of adapting its content to fit screens of different sizes; it stays static regardless of the device that is viewing the site. This causes problems with devices having particularly small screens or large screens since elements containing text might become illegible.
@@ -371,7 +371,7 @@ A web application, and by extension also a mobile web app, runs on a web server 
 
 Since common web technologies like HTML5, CSS and JavaScript are used, the app is only developed once and can thereafter be accessed by any device using any sufficiently up-to-date browser, making it platform independent \cite{crossplatform_taxonomy}. Adversely, this dependence on browsers means that the app has many limitations such as  inability to access device hardware and software, inability to be published on a mobile storefront, high dependency on network connectivity, and potentially poor performance \cite{crossplatform_taxonomy, crossplatform_2012}
 
-In figure \ref{fig:webapp}, the architecture of a web app is seen. The browser fetches all necessary data from the web server that is hosting the application. Since a web app is built completely out of web technologies and runs exclusively in the browser, a user’s device does not need to install anything else.
+In Figure \ref{fig:webapp}, the architecture of a web app is seen. The browser fetches all necessary data from the web server that is hosting the application. Since a web app is built completely out of web technologies and runs exclusively in the browser, a user’s device does not need to install anything else.
 
 \begin{figure}[h]%
 	\centering
@@ -387,7 +387,7 @@ By making use of an abstraction layer, the web technologies that make up the app
 
 A hybrid app can be distributed through platform-specific storefronts and cannot be used directly through the browser like a web app, a download of the full application is required to use it \cite{crossplatform_2012, mobile_web_apps_2013}. Just like a native app published on a storefront, updates are therefore also distributed through these same storefronts.
 
-In figure \ref{fig:hybridapp}, the architecture of a hybrid app is seen. The core app is a mobile web app wrapped in Web View. By the use of an abstraction layer, native functionality can be achieved.
+In Figure \ref{fig:hybridapp}, the architecture of a hybrid app is seen. The core app is a mobile web app wrapped in Web View. By the use of an abstraction layer, native functionality can be achieved.
 
 \begin{figure}[h]%
 	\centering
@@ -431,7 +431,7 @@ The web app manifest includes information about the name, app icon, version, and
 A manifest file can have either the “.webmanifest” or “.json” file extensions and is linked in the head of HTML files in the web app in the same way that a CSS file would also be included \cite{mozilla_webmanifest}.
 
 \subsubsection{PWA Architecture}
-In figure \ref{fig:pwaapp} the architecture of a PWA is seen. When the application makes a request to fetch some form of content from the remote web server, the service the request instead goes to the service worker. The service worker first checks whether the content exists in the cache; if so it is returned to the app and no network activity is needed. Only when the content has not been cached does the request go to the webserver.
+In Figure \ref{fig:pwaapp} the architecture of a PWA is seen. When the application makes a request to fetch some form of content from the remote web server, the service the request instead goes to the service worker. The service worker first checks whether the content exists in the cache; if so it is returned to the app and no network activity is needed. Only when the content has not been cached does the request go to the webserver.
 \begin{figure}[h]%
 	\centering
 	\includegraphics[height=6cm]{img/Other/struct_pwa.png}
@@ -480,18 +480,16 @@ Low cross-platform dev cost & \xmark & \textasciitilde & \cmark & \cmark \\
 \newpage
 
 \section{Research Project}
-This Chapter contains detailed descriptions of all activities performed during the project both leading up to and during data collection.
+This chapter contains detailed descriptions of all activities performed during the project both leading up to and during data collection.
 
-When searching for grey literature on the subject, Google was the search engine of choice since it is currently the most widely used search engine \cite{search_engine_stats}. The search terms used during the literature study are seen in table \ref{tab:searchterms}. Before entering any search terms in the search engine, the precautions seen in the following list were taken:
+When searching for grey literature on the subject, Google was the search engine of choice since it is currently the most widely used search engine \cite{search_engine_stats}. The search terms used during the literature study are seen in Table \ref{tab:searchterms}. Before entering any search terms in the search engine, the precautions seen in the following list were taken:
 
 \begin{itemize}
-    \item No Google account was signed in to avoid bias or optimizations
-    \item Only results from the past 2 years were shown to filter out outdated sources
-    \item Only results in English were shown
-    \item Location/region-specific search results were disabled
+    \item No Google account was signed in to avoid bias or optimizations.
+    \item Only results from the past 2 years were shown to filter out outdated sources.
+    \item Only results in English were shown.
+    \item Location/region-specific search results were disabled.
 \end{itemize}
-
-
 
 \begin{table}[h]
 \centering
@@ -798,7 +796,7 @@ If a contact person was explicitly given on the course page they were directly c
 
 \newpage
 \section{Results}
-This Chapter presents the results from the short literature study and the survey answers.
+This chapter presents the results from the short literature study and the survey answers.
 
 \subsection{Literature Study}
 The literature study was split into two parts, with the first part examining 15 sources of grey literature and the second part examining 3 sources of scientific literature. The problem areas identified in all the literature were organized and grouped together based on what the underlying issue was. These groups, or more accurately categories, can be seen in the table \ref{tab:lit_study_result}. Additionally, the table includes how many times these issues were mentioned in both the grey literature and the scientific literature, expressed both as a raw number and as a percentage of the total.
@@ -841,7 +839,7 @@ This part of the survey was not aimed at directly answering any of the research 
     \label{fig:res_devq1}
 \end{figure}
 
-The first question asked respondents about which country they work in, results seen in figure \ref{fig:res_devq1}. Most participants (12/16) were from Sweden, while Poland and the USA both had two participants. None of the Indian companies participated in the survey.
+The first question asked respondents about which country they work in, results seen in Figure \ref{fig:res_devq1}. Most participants (12/16) were from Sweden, while Poland and the USA both had two participants. None of the Indian companies participated in the survey.
 
 DSQ 2 is not shown in a diagram like all the other survey questions. DSQ 2 was an optional question that asked respondents to specify which company they work for. For the sake of the privacy of the respondents this information is omitted from the report. Most respondents (10/16) did not answer this question, but of the ones who did 4 were from the same company.
 
@@ -852,7 +850,7 @@ DSQ 2 is not shown in a diagram like all the other survey questions. DSQ 2 was a
     \label{fig:res_devq3}
 \end{figure}
 
-DSQ 3 asked for which age group the participants belonged to, results seens in figure \ref{fig:res_devq3}. Only one respondent was between the age of 50 to 59 years old. five respondents each belonged to the age groups 20-29, 30-39, and 40-49.
+DSQ 3 asked for which age group the participants belonged to, results seens in Figure \ref{fig:res_devq3}. Only one respondent was between the age of 50 to 59 years old. five respondents each belonged to the age groups 20-29, 30-39, and 40-49.
 
 \subsubsection{Part 2 - Experience}
 Much like Part 1 of the survey, Part 2 also asked questions for the purpose of allowing for greater discussion. The questions in Part 2 of the survey helped paint the picture of how experienced respondents were with native and cross-platform development.
@@ -864,7 +862,7 @@ Much like Part 1 of the survey, Part 2 also asked questions for the purpose of a
     \label{fig:res_devq4}
 \end{figure}
 
-DSQ 4 asked how many years of experience as a developer the respondents had, results seen in figure \ref{fig:res_devq4}. The main purpose of this question was to see if developers of different experience levels have different preferences and opinions of cross-platform development and PWA. Two respondents had between 5 and 9 years of experience while 4 respondents had more than 15 years of experience. The remaining 10 respondents were evenly split between 10 to 14 years of experience and less than five years of experience.
+DSQ 4 asked how many years of experience as a developer the respondents had, results seen in Figure \ref{fig:res_devq4}. The main purpose of this question was to see if developers of different experience levels have different preferences and opinions of cross-platform development and PWA. Two respondents had between 5 and 9 years of experience while 4 respondents had more than 15 years of experience. The remaining 10 respondents were evenly split between 10 to 14 years of experience and less than five years of experience.
 
 \begin{figure}[ht!]
     \centering
@@ -873,7 +871,7 @@ DSQ 4 asked how many years of experience as a developer the respondents had, res
     \label{fig:res_devq5}
 \end{figure}
 
-DSQ 5 asked what best describes the current profession of the respondent, results seen in figure \ref{fig:res_devq5}. The purpose of this questions was to was to see how for instance Android developers' opinions of PWA differs from that of iOS developers. Five respondents were Android developers, seven were iOS developers, three were web developers, and only once was a cross-platform developer.
+DSQ 5 asked what best describes the current profession of the respondent, results seen in Figure \ref{fig:res_devq5}. The purpose of this questions was to was to see how for instance Android developers' opinions of PWA differs from that of iOS developers. Five respondents were Android developers, seven were iOS developers, three were web developers, and only once was a cross-platform developer.
 
 \begin{figure}[ht!]
     \centering
@@ -882,7 +880,7 @@ DSQ 5 asked what best describes the current profession of the respondent, result
     \label{fig:res_devq6}
 \end{figure}
 
-DSQ 6 asked respondents what type of applications they have previously worked on, results seen in figure \ref{fig:res_devq6}. Much like DSQ 4 and 5, this question was asked to see how developers experience might influence their answers to later questions. Most respondents (11/16) had worked on iOS apps before, while only some respondents (5/16) had worked on Android apps before. Eight respondents had worked on cross-platform apps and seven had worked on regular web apps. Only one respondent had worked on a PWA before. One respondent added that they had also worked on applications not included in the list of options which was software for embedded Linux systems.
+DSQ 6 asked respondents what type of applications they have previously worked on, results seen in Figure \ref{fig:res_devq6}. Much like DSQ 4 and 5, this question was asked to see how developers experience might influence their answers to later questions. Most respondents (11/16) had worked on iOS apps before, while only some respondents (5/16) had worked on Android apps before. Eight respondents had worked on cross-platform apps and seven had worked on regular web apps. Only one respondent had worked on a PWA before. One respondent added that they had also worked on applications not included in the list of options which was software for embedded Linux systems.
 
 \begin{figure}[ht!]
     \centering
@@ -891,7 +889,7 @@ DSQ 6 asked respondents what type of applications they have previously worked on
     \label{fig:res_devq7}
 \end{figure}
 
-DSQ 7 asked respondents what frameworks for cross-platform development they have used in the past, results seen in figure \ref{fig:res_devq7}. This question was asked to gauge the general popularity of different frameworks. A similar question was also asked in the education survey to see what frameworks are included in curricula, so education versus real-world popularity can be compared. React Native was the most popular of the frameworks at seven responses. Flutter, PhoneGap or Cordova, and Ionic were the second most popular at five, five, and 4 responses respectively. Xamarin was the least used framework at only two responses.
+DSQ 7 asked respondents what frameworks for cross-platform development they have used in the past, results seen in Figure \ref{fig:res_devq7}. This question was asked to gauge the general popularity of different frameworks. A similar question was also asked in the education survey to see what frameworks are included in curricula, so education versus real-world popularity can be compared. React Native was the most popular of the frameworks at seven responses. Flutter, PhoneGap or Cordova, and Ionic were the second most popular at five, five, and 4 responses respectively. Xamarin was the least used framework at only two responses.
 
 \subsubsection{Part 3 - PWA}
 This part of the survey had the goal of answering research questions 2, 3, and 4. The questions were a mix of quantitative and qualitative and were quite mixed in what they were asking. All questions in this part were about PWA.
@@ -903,7 +901,7 @@ This part of the survey had the goal of answering research questions 2, 3, and 4
     \label{fig:res_devq8}
 \end{figure}
 
-DSQ 8 asked the respondents about their perceived level of knowledge of PWA, results seen in figure \ref{fig:res_devq8}. The answers were given on a scale of one to five, with one being "None" and five being "Very good". All respondents had at least some knowledge of PWA, since 0/16 responded that their knowledge was a 0/5. A majority of the respondents said their knowledge of PWA was a either a 2/5 (7/16 respondents) or 3/5 (5/16 respondents), which would correspond to "low" and "ok" respectively. Three responded with a 4/5 while only one responded with a 5/5, scores that corresponds to "good" and "very good" level of knowledge respectively.
+DSQ 8 asked the respondents about their perceived level of knowledge of PWA, results seen in Figure \ref{fig:res_devq8}. The answers were given on a scale of one to five, with one being "None" and five being "Very good". All respondents had at least some knowledge of PWA, since 0/16 responded that their knowledge was a 0/5. A majority of the respondents said their knowledge of PWA was a either a 2/5 (7/16 respondents) or 3/5 (5/16 respondents), which would correspond to "low" and "ok" respectively. Three responded with a 4/5 while only one responded with a 5/5, scores that corresponds to "good" and "very good" level of knowledge respectively.
 
 \begin{figure}[ht!]
     \centering
@@ -912,7 +910,7 @@ DSQ 8 asked the respondents about their perceived level of knowledge of PWA, res
     \label{fig:res_devq9}
 \end{figure}
 
-DSQ 9 asked if the respondents would consider developing a PWA in the future, results seen in figure \ref{fig:res_devq9}. The question received a very split result: a small majority (9/16) responded with "Yes" while a small minority (7/16) responded with a "No". Research question 3 is about what developers think of PWA and its future. RSQ 9 does not directly ask their opinion on PWA, but the answers the respondents give can still be used to answer the research question.
+DSQ 9 asked if the respondents would consider developing a PWA in the future, results seen in Figure \ref{fig:res_devq9}. The question received a very split result: a small majority (9/16) responded with "Yes" while a small minority (7/16) responded with a "No". Research question 3 is about what developers think of PWA and its future. RSQ 9 does not directly ask their opinion on PWA, but the answers the respondents give can still be used to answer the research question.
 
 \begin{figure}[ht!]
     \centering
@@ -922,7 +920,7 @@ DSQ 9 asked if the respondents would consider developing a PWA in the future, re
 \end{figure}
 
 \newpage
-DSQ 10 asked if there is anything that makes the respondents prefer development with other cross-platform solutions, a summary of the results are seen in figure \ref{fig:res_devq10}. The answers were split according to what the issues brought up were related to. This question was optional and received responses from 8 respondents, with one response fitting into two categories at once. A majority of respondents (5/8) mentioned that a cross-platform solution that is "more like native" was preferable. Examples include mentioning that React Native uses "native components" and that other solutions "take less effort to integrate with the native platform". Two responses mentioned that PWA relied too much on the browser, with one respondent saying that this made PWA "unreliable". Two responses mentioned that their preference was  based on them having more experience with other solutions. This question helps answer both research question 2 and 3 since some responses mentioned opinions of PWA (RQ 3) and some mentioned problems with PWA (RQ 2).
+DSQ 10 asked if there is anything that makes the respondents prefer development with other cross-platform solutions, a summary of the results are seen in Figure \ref{fig:res_devq10}. The answers were split according to what the issues brought up were related to. This question was optional and received responses from 8 respondents, with one response fitting into two categories at once. A majority of respondents (5/8) mentioned that a cross-platform solution that is "more like native" was preferable. Examples include mentioning that React Native uses "native components" and that other solutions "take less effort to integrate with the native platform". Two responses mentioned that PWA relied too much on the browser, with one respondent saying that this made PWA "unreliable". Two responses mentioned that their preference was  based on them having more experience with other solutions. This question helps answer both research question 2 and 3 since some responses mentioned opinions of PWA (RQ 3) and some mentioned problems with PWA (RQ 2).
 
 \begin{figure}[ht!]
     \centering
@@ -931,7 +929,7 @@ DSQ 10 asked if there is anything that makes the respondents prefer development 
     \label{fig:res_devq11}
 \end{figure}
 
-DSQ 11 asked if there is anything that makes the respondents prefer development of native apps to that of PWA, a summary of the results are seen in figure \ref{fig:res_devq11}. The answers were split according to what the issues brought up were related to. This question was optional and received responses from 11 respondents, with several responses fitting into two or more categories at once. Four responses mentioned that native has either better performance or access to better features. Three responses mentioned that native offers a better user experience (UX) in general. Two responses mentioned that the design language with native is better fit for the target platform. Two responses mentioned that they prefer native development since they have more experience with it. One response mentioned that web standards "can take ages to get adopted by browser vendors" while for native the access to new features is much quicker. This question helps answer research question 2, 3, and 4 since the responses include current problems with PWA (RQ 2 \& RQ 3) and what is holding it back from being more widely used (RQ 4).
+DSQ 11 asked if there is anything that makes the respondents prefer development of native apps to that of PWA, a summary of the results are seen in Figure \ref{fig:res_devq11}. The answers were split according to what the issues brought up were related to. This question was optional and received responses from 11 respondents, with several responses fitting into two or more categories at once. Four responses mentioned that native has either better performance or access to better features. Three responses mentioned that native offers a better user experience (UX) in general. Two responses mentioned that the design language with native is better fit for the target platform. Two responses mentioned that they prefer native development since they have more experience with it. One response mentioned that web standards "can take ages to get adopted by browser vendors" while for native the access to new features is much quicker. This question helps answer research question 2, 3, and 4 since the responses include current problems with PWA (RQ 2 \& RQ 3) and what is holding it back from being more widely used (RQ 4).
 
 \begin{figure}[ht!]
     \centering
@@ -940,7 +938,7 @@ DSQ 11 asked if there is anything that makes the respondents prefer development 
     \label{fig:res_devq12}
 \end{figure}
 
-DSQ 12 asked if the respondents had experienced any of a specific set of problems with PWA, answers seen in figure \ref{fig:res_devq12}. Respondents could select multiple options. "Poor support on iOS" and "Not distributable on app stores" were each selected four times. "Battery consumption was higher" was selected three times. "Poor support for legacy devices" was selected two times. Being selected one time each was hardware and software access was limited. One respondent gave an original answer that was the a PWA "Doesn't feel at home on the phone". This question directly answers research question 2.
+DSQ 12 asked if the respondents had experienced any of a specific set of problems with PWA, answers seen in Figure \ref{fig:res_devq12}. Respondents could select multiple options. "Poor support on iOS" and "Not distributable on app stores" were each selected four times. "Battery consumption was higher" was selected three times. "Poor support for legacy devices" was selected two times. Being selected one time each was hardware and software access was limited. One respondent gave an original answer that was the a PWA "Doesn't feel at home on the phone". This question directly answers research question 2.
 
 \begin{figure}[ht!]
     \centering
@@ -949,7 +947,7 @@ DSQ 12 asked if the respondents had experienced any of a specific set of problem
     \label{fig:res_devq13}
 \end{figure}
 
-DSQ 13 was a follow-up to DSQ 12 and asked when the last time any of the mentioned problems was encountered, results seen in figure \ref{fig:res_devq13}. None of the respondents answered 2016, 2017, 2018, or 2019. Four of the respondents answered 2020 and three answered 2021.
+DSQ 13 was a follow-up to DSQ 12 and asked when the last time any of the mentioned problems was encountered, results seen in Figure \ref{fig:res_devq13}. None of the respondents answered 2016, 2017, 2018, or 2019. Four of the respondents answered 2020 and three answered 2021.
 
 \begin{figure}[ht!]
     \centering
@@ -959,7 +957,7 @@ DSQ 13 was a follow-up to DSQ 12 and asked when the last time any of the mention
 \end{figure}
 
 \newpage
-DSQ 14 asked respondents of their opinion on PWA today, a summary of the results are seen in figure \ref{fig:res_devq14}. Four respondents mentioned that they liked native better or that native development is better. Four respondents mentioned that the main problem with PWA was the it is not mature enough yet. Three respondents said that PWA is good enough for the web, but native development is better for apps.
+DSQ 14 asked respondents of their opinion on PWA today, a summary of the results are seen in Figure \ref{fig:res_devq14}. Four respondents mentioned that they liked native better or that native development is better. Four respondents mentioned that the main problem with PWA was the it is not mature enough yet. Three respondents said that PWA is good enough for the web, but native development is better for apps.
 
 \begin{figure}[ht!]
     \centering
@@ -968,7 +966,7 @@ DSQ 14 asked respondents of their opinion on PWA today, a summary of the results
     \label{fig:res_devq15}
 \end{figure}
 
-DSQ 15 asked respondents to to rate their agreement with the statement that "PWA is the future of mobile development", results seen in figure \ref{fig:res_devq15}. The answers were given on a scale of one to five, with one being "Strongly disagree" and five being "Strongly agree". A vast majority answered either 1 (5/16) or (7/16), meaning that disagreed with the statement. The options 3 and 4 were each chosen two times while the option 5 was not chosen by any respondents.
+DSQ 15 asked respondents to to rate their agreement with the statement that "PWA is the future of mobile development", results seen in Figure \ref{fig:res_devq15}. The answers were given on a scale of one to five, with one being "Strongly disagree" and five being "Strongly agree". A vast majority answered either 1 (5/16) or (7/16), meaning that disagreed with the statement. The options 3 and 4 were each chosen two times while the option 5 was not chosen by any respondents.
 
 \begin{figure}[ht!]
     \centering
@@ -978,7 +976,7 @@ DSQ 15 asked respondents to to rate their agreement with the statement that "PWA
 \end{figure}
 
 \newpage
-DSQ 16 was a follow-up question to DSQ 15, asking respondents that disagreed with the statement in DSQ 15 to try and give an answer as to what is needed to change for the statement to become true, a summary of the results are seen in figure \ref{fig:res_devq16}. Five respondents said that PWA needs to become at least on par with native in terms of for instance device API access. Two respondents pondered that maybe it is the market that needs to change to fit PWA instead of the other way around, while two respondents stated that since PWA is cross-platform, it cannot be the future. Two respondents talked about how PWA needs to be the standard on a platform, or at least advocated by Apple or Google. DSQ 15 and DSQ 16 together help answer research question 3, while DSQ 16 additionally help answer research question 4.
+DSQ 16 was a follow-up question to DSQ 15, asking respondents that disagreed with the statement in DSQ 15 to try and give an answer as to what is needed to change for the statement to become true, a summary of the results are seen in Figure \ref{fig:res_devq16}. Five respondents said that PWA needs to become at least on par with native in terms of for instance device API access. Two respondents pondered that maybe it is the market that needs to change to fit PWA instead of the other way around, while two respondents stated that since PWA is cross-platform, it cannot be the future. Two respondents talked about how PWA needs to be the standard on a platform, or at least advocated by Apple or Google. DSQ 15 and DSQ 16 together help answer research question 3, while DSQ 16 additionally help answer research question 4.
 
 \subsubsection{Part 4 - Your Company \& Clients}
 This part of the survey only asked a small number of question about the developers' employing companies and their clients. These questions together help answer research question 5, if clients influence the decision of using PWA or not.
@@ -990,7 +988,7 @@ This part of the survey only asked a small number of question about the develope
     \label{fig:res_devq17}
 \end{figure}
 
-DSQ 17 asked if a client ever requested a PWA, results seen in figure \ref{fig:res_devq17}. Seven respondents answered that they do not know if a client has request PWA. Five respondents answered "Yes" and four answered "No", a very evenly split result.
+DSQ 17 asked if a client ever requested a PWA, results seen in Figure \ref{fig:res_devq17}. Seven respondents answered that they do not know if a client has request PWA. Five respondents answered "Yes" and four answered "No", a very evenly split result.
 
 \begin{figure}[ht!]
     \centering
@@ -999,7 +997,7 @@ DSQ 17 asked if a client ever requested a PWA, results seen in figure \ref{fig:r
     \label{fig:res_devq18}
 \end{figure}
 
-DSQ 18 asked if the respondent had ever proposer PWA to a client, results seen in figure \ref{fig:res_devq18}. An overwhelming majority of respondents (14/16) answered that they had not proposed PWA as a solution to a client while only two respondent that they had proposed it.
+DSQ 18 asked if the respondent had ever proposer PWA to a client, results seen in Figure \ref{fig:res_devq18}. An overwhelming majority of respondents (14/16) answered that they had not proposed PWA as a solution to a client while only two respondent that they had proposed it.
 
 \begin{figure}[ht!]
     \centering
@@ -1008,7 +1006,7 @@ DSQ 18 asked if the respondent had ever proposer PWA to a client, results seen i
     \label{fig:res_devq19}
 \end{figure}
 
-DSQ 19 asked what types of applications the respondents' employing companies offered to clients, results seen in figure \ref{fig:res_devq19}. This question was mainly asked to see if the respondents' experience correlates with what the company offers.
+DSQ 19 asked what types of applications the respondents' employing companies offered to clients, results seen in Figure \ref{fig:res_devq19}. This question was mainly asked to see if the respondents' experience correlates with what the company offers.
 
 \subsubsection{Part 5 - Mobile applications}
 This part of the survey contained only one question about how important certain aspects of mobile apps are according to developers. The question contains 9 sub-questions, one for each of the aspects/features that was to be ranked. This result is only presented in table \ref{tab:devq20} and will not be further described in this Chapter. Individual diagrams for each of the sub-questions can be seen in Appendix C.
@@ -1066,7 +1064,7 @@ This part of the survey was not aimed at directly answering any of the research 
     \label{fig:res_eduq1}
 \end{figure}
 \newpage
-ESQ 1 asked the respondents to answer which country they work in, results seen in figure \ref{fig:res_eduq1}. Both respondents were from Sweden.
+ESQ 1 asked the respondents to answer which country they work in, results seen in Figure \ref{fig:res_eduq1}. Both respondents were from Sweden.
 
 ESQ 2 was optional and asked respondents which institute of higher education they worked in. The results of this question is not shown to protect the privacy of the respondents.
 
@@ -1077,7 +1075,7 @@ ESQ 2 was optional and asked respondents which institute of higher education the
     \label{fig:res_eduq3}
 \end{figure}
 
-ESQ 3 asked respondents which age group they belonged to, results seen in figure \ref{fig:res_eduq3}. One respondent was between 40-49 years old while the other was between 50-59 years old.
+ESQ 3 asked respondents which age group they belonged to, results seen in Figure \ref{fig:res_eduq3}. One respondent was between 40-49 years old while the other was between 50-59 years old.
 \newpage
 
 \begin{figure}[ht!]
@@ -1087,7 +1085,7 @@ ESQ 3 asked respondents which age group they belonged to, results seen in figure
     \label{fig:res_eduq4}
 \end{figure}
 
-ESQ 4 asked respondents what type of courses they teach, results seen in figure \ref{fig:res_eduq4}. Both respondents teach in "Mobile app development" courses, and one respondent also teach in "Web development" courses.
+ESQ 4 asked respondents what type of courses they teach, results seen in Figure \ref{fig:res_eduq4}. Both respondents teach in "Mobile app development" courses, and one respondent also teach in "Web development" courses.
 
 \begin{figure}[ht!]
     \centering
@@ -1096,7 +1094,7 @@ ESQ 4 asked respondents what type of courses they teach, results seen in figure 
     \label{fig:res_eduq5}
 \end{figure}
 
-ESQ 5 asked respondents for how long they had been teaching the subjects specific in ESQ 4, results seen in figure \ref{fig:res_eduq5}. One respondent answered that they had been teaching the subjects for less than 5 years while the other answered 5-9 years.
+ESQ 5 asked respondents for how long they had been teaching the subjects specific in ESQ 4, results seen in Figure \ref{fig:res_eduq5}. One respondent answered that they had been teaching the subjects for less than 5 years while the other answered 5-9 years.
 
 \subsubsection{Part 2 - Mobile Applications}
 This part of the survey asked questions about PWA, cross-platform in general, and the importance of mobile app qualities/features. These questions were asked so the answers could be directly compared to the answers given by developers.
@@ -1109,7 +1107,7 @@ This part of the survey asked questions about PWA, cross-platform in general, an
 \end{figure}
 
 \newpage
-ESQ 6 asked respondents what type of applications their courses covered, results seen in figure \ref{fig:res_eduq6}. Both respondents had courses in native android development. Native iOS, Web, and cross-platform/hybrid apps were covered in courses by one respondent. This question was asked to help answer research question 6 which is about the state of PWA coverage in higher education.
+ESQ 6 asked respondents what type of applications their courses covered, results seen in Figure \ref{fig:res_eduq6}. Both respondents had courses in native android development. Native iOS, Web, and cross-platform/hybrid apps were covered in courses by one respondent. This question was asked to help answer research question 6 which is about the state of PWA coverage in higher education.
 
 \begin{figure}[ht!]
     \centering
@@ -1118,7 +1116,7 @@ ESQ 6 asked respondents what type of applications their courses covered, results
     \label{fig:res_eduq7}
 \end{figure}
 
-ESQ 7 was a follow-up question to ESQ 6 and it asked respondents whose courses do not cover cross-platform if they think cross-platform development should be covered, results seen in figure \ref{fig:res_eduq7}. The respondent answered that Yes, they do think cross-platform should be covered. This question was asked in conjunction with ESQ 6 to help answer research question 6.
+ESQ 7 was a follow-up question to ESQ 6 and it asked respondents whose courses do not cover cross-platform if they think cross-platform development should be covered, results seen in Figure \ref{fig:res_eduq7}. The respondent answered that Yes, they do think cross-platform should be covered. This question was asked in conjunction with ESQ 6 to help answer research question 6.
 
 \begin{figure}[ht!]
     \centering
@@ -1128,7 +1126,7 @@ ESQ 7 was a follow-up question to ESQ 6 and it asked respondents whose courses d
 \end{figure}
 
 \newpage
-ESQ 8 was a follow-up question to ESQ 6 and it asked respondents whose courses do cover cross-platform what type of frameworks they cover, results seen in figure \ref{fig:res_eduq8}. The respondent answered that the framework "React Native" was covered in their courses. This question was asked in conjunction with ESQ 6 to help answer research question 6.
+ESQ 8 was a follow-up question to ESQ 6 and it asked respondents whose courses do cover cross-platform what type of frameworks they cover, results seen in Figure \ref{fig:res_eduq8}. The respondent answered that the framework "React Native" was covered in their courses. This question was asked in conjunction with ESQ 6 to help answer research question 6.
 
 \begin{table}[h]
     \centering
@@ -1173,7 +1171,7 @@ ESQ 9 is a duplicate of DSQ 20, meaning that the question contains 9 sub-questio
 \subsubsection{Part 3 - PWA}
 This part of the survey had the goal of answering research question 6. All questions in this part were about PWA.
 
-ESQ 10 is a duplicate of DSQ 8 and asked the respondents about their perceived level of knowledge of PWA, results seen in figure \ref{fig:res_devq10}. The answers were given on a scale of one to five, with one being "None" and five being "Very good". One respondent answered 3/5 and one respondent answered 4/5, which corresponds to an "ok" and "good" level of knowledge respectively.
+ESQ 10 is a duplicate of DSQ 8 and asked the respondents about their perceived level of knowledge of PWA, results seen in Figure \ref{fig:res_devq10}. The answers were given on a scale of one to five, with one being "None" and five being "Very good". One respondent answered 3/5 and one respondent answered 4/5, which corresponds to an "ok" and "good" level of knowledge respectively.
 
 \begin{figure}[ht!]
     \centering
@@ -1182,7 +1180,7 @@ ESQ 10 is a duplicate of DSQ 8 and asked the respondents about their perceived l
     \label{fig:res_eduq11}
 \end{figure}
 
-ESQ 11 asked respondents whether or not PWA was covered by the required literature of their courses, results seen in figure \ref{fig:res_eduq11}. Both respondents answered "No" to the question.
+ESQ 11 asked respondents whether or not PWA was covered by the required literature of their courses, results seen in Figure \ref{fig:res_eduq11}. Both respondents answered "No" to the question.
 
 \begin{figure}[ht!]
     \centering
@@ -1191,7 +1189,7 @@ ESQ 11 asked respondents whether or not PWA was covered by the required literatu
     \label{fig:res_eduq12}
 \end{figure}
 
-ESQ 12 asked respondents whether or not PWA was mentioned in the curriculum of their courses, results seen in figure \ref{fig:res_eduq12}. Both respondents answered "No" to the question.
+ESQ 12 asked respondents whether or not PWA was mentioned in the curriculum of their courses, results seen in Figure \ref{fig:res_eduq12}. Both respondents answered "No" to the question.
 
 \begin{figure}[ht!]
     \centering
@@ -1200,7 +1198,7 @@ ESQ 12 asked respondents whether or not PWA was mentioned in the curriculum of t
     \label{fig:res_eduq13}
 \end{figure}
 
-\newpage ESQ 13 was a follow-up to ESQ 12 and asked respondents to elaborate on why PWA was not covered in their courses, results seen in figure \ref{fig:res_eduq13}. One respondent answered that the only cross-platform they covered was front-end web with JavaScript frameworks, but that no "true" cross-platform development was covered. One respondent answered that the only cross-platform apps covered by their courses were hybrid apps with the "React Native" framework.
+\newpage ESQ 13 was a follow-up to ESQ 12 and asked respondents to elaborate on why PWA was not covered in their courses, results seen in Figure \ref{fig:res_eduq13}. One respondent answered that the only cross-platform they covered was front-end web with JavaScript frameworks, but that no "true" cross-platform development was covered. One respondent answered that the only cross-platform apps covered by their courses were hybrid apps with the "React Native" framework.
 
 \begin{figure}[ht!]
     \centering
@@ -1209,7 +1207,7 @@ ESQ 12 asked respondents whether or not PWA was mentioned in the curriculum of t
     \label{fig:res_eduq14}
 \end{figure}
 
-ESQ 14 asked respondents whether or not it had ever been request that PWA was added to their courses, results seen in figure \ref{fig:res_eduq14}. Both respondents answered "Yes" to the question.
+ESQ 14 asked respondents whether or not it had ever been request that PWA was added to their courses, results seen in Figure \ref{fig:res_eduq14}. Both respondents answered "Yes" to the question.
 
 \begin{figure}[ht!]
     \centering
@@ -1218,7 +1216,7 @@ ESQ 14 asked respondents whether or not it had ever been request that PWA was ad
     \label{fig:res_eduq15}
 \end{figure}
 
-\newpage ESQ 15 was a follow-up to ESQ 14 and asked respondents to describe whom had made the request to add PWA to their courses, results seen in figure \ref{fig:res_eduq15}. Both respondents answers mentioned that the request had been made from outside of the courses or programs. One respondent further clarified that the request was made from actors that provide assignments from students in project courses.
+\newpage ESQ 15 was a follow-up to ESQ 14 and asked respondents to describe whom had made the request to add PWA to their courses, results seen in Figure \ref{fig:res_eduq15}. Both respondents answers mentioned that the request had been made from outside of the courses or programs. One respondent further clarified that the request was made from actors that provide assignments from students in project courses.
 
 \begin{figure}[ht!]
     \centering
@@ -1227,7 +1225,7 @@ ESQ 14 asked respondents whether or not it had ever been request that PWA was ad
     \label{fig:res_eduq16}
 \end{figure}
 
-ESQ 16 asked respondents whether or not they believe PWA should be included in the curriculum for their courses, results seen in figure \ref{fig:res_eduq16}. Both respondents answered "Yes" to the question.
+ESQ 16 asked respondents whether or not they believe PWA should be included in the curriculum for their courses, results seen in Figure \ref{fig:res_eduq16}. Both respondents answered "Yes" to the question.
 
 % Reset table styling
 \setlength{\arrayrulewidth}{0.5mm}
