@@ -2410,6 +2410,11 @@
     <bcf:citekey order="44">google_forms</bcf:citekey>
     <bcf:citekey order="45">clutch</bcf:citekey>
     <bcf:citekey order="46">higher_edu_sweden</bcf:citekey>
+    <bcf:citekey order="47">thesis_steczko</bcf:citekey>
+    <bcf:citekey order="48">thesis_sverige</bcf:citekey>
+    <bcf:citekey order="49">realize_native_with_pwa</bcf:citekey>
+    <bcf:citekey order="50">pwa_definite_approach</bcf:citekey>
+    <bcf:citekey order="51">thesis_pwa_ux</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
