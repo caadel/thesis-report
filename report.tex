@@ -134,7 +134,7 @@
 %------------------------------------------------------------------------
 \selectlanguage{english}
 \begin{abstract}
-Mobile applications can be developed using a variety of different techniques and technologies. One of the most recent of these techniques is the Progressive Web Application (PWA), a cross-platform solution that is built exclusively using common web technologies. The technique has great potential to become a major competitor to native applications but is currently held back by a few rather significant limitations.
+\noindent Mobile applications can be developed using a variety of different techniques and technologies. One of the most recent of these techniques is the Progressive Web Application (PWA), a cross-platform solution that is built exclusively using common web technologies. The technique has great potential to become a major competitor to native applications but is currently held back by a few rather significant limitations.
 
 This project was initiated because of a significant lack of academic research on the topic of PWA, and a perceived poor level of knowledge in the industry about the technique. The goal of the project was to determine if PWA deserved broader utilization or if the current low level of adoption was justified. 
 
@@ -157,13 +157,13 @@ The results of this project show that the average level of knowledge of PWA is v
 
 \section{Introduction}
 \label{Intro}
-We live in a digital age where mobile phones have become a major part of our daily lives. Modern mobile phones, so-called smartphones, are predominantly running either the Android or iOS operating systems. Since both platforms have large user bases companies often need to provide their applications, or apps, on both platforms to not miss out on potential users. The process of developing an app for two distinctly different platforms while keeping the same functionality and appearance can be both costly and time-consuming. Instead of developing native apps for each platform, a more cost-effective solution is to develop a single app that can run on multiple platforms; a so-called cross-platform app. There are many different options for cross-platform development, but this research project will only focus on Progressive Web Applications (PWA). PWAs are built on the same technologies that power websites, but can in contrast to regular web apps be installed on devices, much like native apps. Compared to other cross-platform alternatives, PWA is somewhat unknown and infrequently used despite having high potential.
+We live in a digital age where mobile phones have become a major part of our daily lives. Modern mobile phones, so-called smartphones, are predominantly running either the Android or iOS operating systems. Since both platforms have large user bases, companies often need to provide their applications, or apps, on both platforms to not miss out on potential users. The process of developing an app for two distinctly different platforms while keeping the same functionality and appearance can be both costly and time-consuming. Instead of developing native apps for each platform, a more cost-effective solution is to develop a single app that can run on multiple platforms; a so-called cross-platform app. There are many different options for cross-platform development, but this research project will only focus on Progressive Web Applications (PWA). PWAs are built on the same technologies that power websites, but can in contrast to regular web apps be installed on devices, much like native apps. Compared to other cross-platform alternatives, PWA is somewhat unknown and infrequently used despite having high potential.
 
 \subsection{Background}
 \label{Intro_background}
-In 2007, Steve Jobs of Apple Inc. revealed their latest product, a mobile phone they called the "iPhone". During the announcement, Jobs also presented their proposed solution to application development on this new platform. By using a web browser and what was at the time state-of-the-art web technologies, developers could create web-based applications that behaved just like native applications \cite{stevejobs_pwa}. However, a year later they introduced an application marketplace, the App Store, which completely replaced the previously announced development technique \cite{stevejobs_appstore}. It was not until 2015 that the concept of installable web apps resurfaced in an article published by Google Chrome developer Alex Russel, now named as Progressive Web Applications \cite{russel_pwa}.
+In 2007, Steve Jobs of Apple Inc. revealed their latest product, a mobile phone, which they called the "iPhone". During the announcement, Jobs also presented their proposed solution to application development on this new platform. By using a web browser and what was at the time state-of-the-art web technologies, developers could create web-based applications that behaved just like native applications \cite{stevejobs_pwa}. However, a year later they introduced an application marketplace, the App Store, which completely replaced the previously announced development technique \cite{stevejobs_appstore}. It was not until 2015 that the concept of installable web apps resurfaced in an article published by Google Chrome developer Alex Russel, now named as Progressive Web Applications \cite{russel_pwa}.
 
-A PWA is a cross-platform web application that is in essence a mobile-friendly website that can be installed locally on a device. PWAs are not a new technology, but rather a development technique that adheres to the three major qualities of installability, capability, and reliability \cite{whatarepwas}. The application is installable and is able to run in its own stand-alone window instead of being constrained to a browser tab, and can therefore become indistinguishable from a native application. Once installed, it has capabilities much greater than that of a normal website, such as hardware access and proper push notifications. Since its inception, the capabilities of PWAs have greatly improved, and only a few features are still missing compared to its native counterparts \cite{whatwebcando}. Finally, the application is fast and reliable, regardless of network connection.
+A PWA is a cross-platform web application that is in essence a mobile-friendly website that can be installed locally on a device. PWA is not a new technology in itself, but rather a development technique that follows best practices in web development and adheres to the three major qualities of installability, capability, and reliability \cite{whatarepwas}. The application must be installable and able to run in its own stand-alone window instead of being constrained to a browser tab, and can therefore become indistinguishable from a native application. Once installed, it has capabilities much greater than that of a normal website, such as hardware access and proper push notifications. Since its inception, the capabilities of PWAs have greatly improved. Today there are only a few features, such as access to contacts and Near-Field Communication (NFC), that are still missing compared to its native counterparts \cite{whatwebcando}. Finally, the application must be fast and reliable, regardless of network connection.
 
 Important to note is that there exists a technology similar to PWA, so-called hybrid applications. These are also built on web technologies but are wrapped in a native “shell” that allows them to run on mobile devices, while PWA’s exclusively use web technologies. Mobile application technologies are further discussed in Chapter \ref{Theory}.
 
@@ -171,25 +171,25 @@ PWA has been called “the future of mobile applications”, something that will
 
 \subsection{Related Work}
 \label{Intro_relatedWork}
-In 2016, Steczko investigated the differences that exist between native and cross-platform development. He interviewed several companies about their experiences and opinions on the two development alternatives. He concluded that while both options have their pros and cons, native was the preferred choice \cite{thesis_steczko}. His project investigated cross-platform development in a general sense, but he never mentions PWA in the report, presumably since the technique was mostly unknown at the time.
+In 2016, Steczko \cite{thesis_steczko} investigated the differences that exist between native and cross-platform development. He interviewed several companies about their experiences and opinions on the two development alternatives. He concluded that while both options have their pros and cons, native was the preferred choice . His project investigated cross-platform development in a general sense, but he never mentions PWA in the report, presumably since the technique was mostly unknown at the time.
 
-In 2020, Olsson and Gustafsson investigated the differences between PWA and native development, extending the work done four years prior by Steczko. They also conducted interviews but instead focused on PWA in particular, rather than cross-platform development as a whole. They also extended the research by using a tool to determine the rate of adoption in Swedish companies, concluding that PWA appears to be drastically under-utilized \cite{thesis_sverige}.
+In 2020, Olsson and Gustafsson \cite{thesis_sverige} investigated the differences between PWA and native development, extending the work done four years prior by Steczko. They also conducted interviews but instead focused on PWA in particular, rather than cross-platform development as a whole. They also extended the research by using a tool to determine the rate of adoption in Swedish companies, concluding that PWA appears to be drastically under-utilized.
 
-Many other case studies directly compare a PWA with a native or web app counterpart. For the comparison with web apps, the studies mainly highlight that the initial speed at which the application loads was greatly reduced and that user retention was increased. When comparing to native counterparts, the main advantage was a drastic reduction in app size \cite{casestudies_mia, thesis_pwa_2017, casestudies_google_1, casestudies_google_2, realize_native_with_pwa}.
+Many other case studies \cite{casestudies_mia, thesis_pwa_2017, casestudies_google_1, casestudies_google_2, realize_native_with_pwa} directly compare a PWA with a native or web app counterpart. In the studies where they compare PWA with web apps, they mainly highlight that the initial speed at which the application loads was greatly reduced, and that user retention was increased, when switching to PWA. When comparing to native counterparts, the main advantage was a drastic reduction in app size.
 
-Thacker and Dharani mention that due to the capabilities of PWA not differing meaningfully from native, the adoption of the technique is expected to rise. They also mention that PWAs are not yet widely known by end-users \cite{realize_native_with_pwa}.
+Thacker and Dharani \cite{realize_native_with_pwa} mention that due to the capabilities of PWA not differing meaningfully from native, the adoption of the technique is expected to rise. They also mention that PWAs are not yet widely known by end-users.
 
-Majchrzak et al. discuss the possibility of PWA becoming the “Definite Approach to Cross-Platform Development” meaning that PWA would replace all other cross-platform technologies in the future. While they did not draw a definitive conclusion to the question, they discussed many different aspects of PWAs in great detail and encouraged further research on the topic to fill the existing knowledge gaps. One of the most significant hindrances to increased PWA adoption they identified was the poor support the tech has on iOS devices \cite{pwa_definite_approach}.
+Majchrzak et al. \cite{pwa_definite_approach} discuss the possibility of PWA becoming the “Definite Approach to Cross-Platform Development” meaning that PWA would replace all other cross-platform technologies in the future. While they did not draw a definitive conclusion to the question, they discussed many different aspects of PWAs in great detail and encouraged further research on the topic to fill the existing knowledge gaps. One of the most significant hindrances to increased PWA adoption they identified was the poor support the tech has on iOS devices.
 
-In a usability test by Sedkowska, native social media applications that also had a PWA alternative were compared and concluded that the participants slightly favored the PWA alternative but that no major usability differences could be found \cite{thesis_pwa_ux}.
+In a usability test by Sedkowska \cite{thesis_pwa_ux}, native social media applications that also had a PWA alternative were compared and concluded that the participants slightly favored the PWA alternative but that no major usability differences could be found.
+
+This thesis will mostly be an extension of the work done by Olsson and Gustafsson \cite{thesis_sverige}, which in turn was an extension of the work done by Steczko \cite{thesis_steczko}. By conducting a similar, but extended, survey we can also further investigate how the industry views the issues described by Majchrzak et al. \cite{pwa_definite_approach} and see if PWA deserves a higher adoption rate.
 
 \subsection{Problem Formulation}
 \label{Intro_problem}
-The research on the topic of PWA is sparse and not very varied. E.g., it proves somewhat challenging to find papers about the state-of-the-art. Furthermore, previous research indicates that PWA is infrequently used and not as well-known as expected. I.e., the technology seems to be rarely known and thus heavily under-utilized.
+The research on the topic of PWA is sparse and not very varied. E.g. it proves somewhat challenging to find papers about the state-of-the-art. Furthermore, previous research indicates that PWA is infrequently used and not as well-known as expected, with no definitive answer as to why the technique has not become more popular. I.e. the technology seems to be rarely known and thus heavily under-utilized.
 
-To understand why this is the case, this thesis aims to investigate the current state of PWA in the industry and whether it deserves broader utilization by gathering opinions and knowledge from mobile application developers. On a smaller scale, the opinions of lecturers in higher education will also be collected.
-
-In order to do so, we answer the research questions in Table \ref{tab:rqs}.
+To understand why this is the case, this thesis aims to investigate the current state of PWA in the industry and whether it deserves broader utilization by answering the research questions in Table \ref{tab:rqs}.
 
 \begin{table}[t]
 \centering
@@ -198,7 +198,7 @@ In order to do so, we answer the research questions in Table \ref{tab:rqs}.
 \hline
 \multicolumn{2}{|c|}{\cellcolor[HTML]{343434}{\color[HTML]{FFFFFF} Research questions}} \\ \hline
 RQ 1 & Are the most important characteristics of mobile applications realized by PWA? \\
-RQ2 & Do developers experience the same problems described in the literature? \\
+RQ 2 & Do developers experience the same problems described in the literature? \\
 RQ 3 & What do developers think about PWA and its future? \\
 RQ 4 & What needs to change with PWA to achieve more widespread adoption? \\
 RQ 5 & Do customers influence the decision of native vs PWA? \\
@@ -209,13 +209,16 @@ RQ 6 & What is the state of PWA coverage in web \& app development in higher edu
 \end{table}
 
 \newpage
+
 \subsection{Motivation}
 \label{Intro_motivation}
 Poor knowledge of PWA in the industry can mean a missed opportunity to build the best app for a company’s purpose. The results of this thesis might lead companies to decide to offer PWA as a solution to customers and incentivize them to inform their customers about the advantages the tech can offer them.
 
-In conjunction with the results from also surveying higher education, further knowledge of the underlying causes for the perceived low adoption of PWA in the industry can be gained. The results of this thesis might also incentivize lecturers in higher education to incorporate PWA into their courses, improving the variety of development techniques and technologies taught in higher education and avoiding failing to meet the needs of the industry.
+We can gain deeper knowledge of the underlying causes for the perceived low adoption of PWA by surveying both developers and lecturers about the technique. Anyone working with the development of PWA might find this information useful.  
 
-\subsection{Result Types}
+The results of this thesis might also incentivize lecturers in higher education to incorporate PWA into their courses, improving the variety of development techniques and technologies taught in higher education and avoiding failing to meet the needs of the industry.
+
+\subsection{Results}
 \label{Intro_results}
 This thesis uses surveys as the method for obtaining data about the current state of PWAs which means that the primary result will be the data collected from said surveys. From an evaluation of this data, conclusions can be drawn about what the state of PWA as a development technique is from the perspective of the industry. The surveys contribute to answering all of the research questions.
 
@@ -225,7 +228,7 @@ RQ 1 and 4 are further answered by the creation of a checklist containing the mo
 
 \subsection{Scope}
 \label{Intro_scope}
-In this thesis, the current state of PWA is investigated by interviewing companies and higher educational institutes about the technique. The investigation is limited by only surveying companies offering mobile application development services. The companies are further limited to be based in one of four different countries  (Sweden, USA, Poland, and India). In the investigation of the education sector only higher educational institutes in Sweden are to be surveyed.
+In this thesis, the current state of PWA is investigated by interviewing companies and higher educational institutes about the technique. The investigation is limited by only surveying companies offering mobile application development services. The companies are further limited to only be based in one of four different countries (Sweden, USA, Poland, and India). The countries were selected to represent a somewhat broad and diverse demographic. In the investigation of the education sector only higher educational institutes in Sweden are to be surveyed.
 
 There are a number of things this project will not involve, such as investigating the numerical rate of adoption in any of the selected countries, describing the process of developing a PWA or converting a regular web app to a PWA, or creating an exposition of current PWA capabilities and advantages.
 
@@ -251,7 +254,7 @@ The rest of this report will have the following structure:
 
 \section{Method}
 \label{Method}
-This chapter contains a more detailed description of the scientific methods used for this thesis project. Section \ref{Method_project} introduces the project by outlining what methods will be used for which parts of the project and gives an overview of how the project will be carried out. Section \ref{Method_methods} gives more details about the methods that were introduced in Section \ref{Method_project}, as well as briefly mentioning what methods were chosen to not be used. Section \ref{Method_reliabilityValidity} discusses the reliability and validity of the project, by describing what threats exist that might lead to a degradation of the quality of the results and subsequent conclusions drawn from these results. Finally, Section \ref{Method_ethics} discusses ethical considerations for the project, such as how to preserve the anonymity of survey participants.
+This chapter contains a more detailed description of the scientific methods used for this thesis. Section \ref{Method_project} introduces the project by outlining what methods will be used for which parts of the project and gives an overview of how the project will be carried out. Section \ref{Method_methods} gives more details about the methods that were introduced in Section \ref{Method_project}, as well as briefly mentioning what methods were chosen to not be used. Section \ref{Method_reliabilityValidity} discusses the reliability and validity of the project, by describing what threats exist that might lead to a degradation of the quality of the results and subsequent conclusions drawn from these results. Finally, Section \ref{Method_ethics} discusses ethical considerations for the project, such as how to preserve the anonymity of survey participants.
 
 \subsection{Research Project Overview}
 \label{Method_project}
@@ -260,15 +263,15 @@ This research project aims to answer questions about the current state of PWA, b
 To answer the research questions, the project is split into two major stages that each produce something for the report:
 
 \begin{enumerate}
-    \item A literature study will answer some of the questions in the survey for the industry, and also produce some of the questions for the survey for universities.
-    \item Conducting the surveys will finally allow us to answer our research questions.
+    \item A literature study will produce some of the questions for both of the surveys and give us a better understanding of the technology.
+    \item Creating and conducting the surveys will finally allow us to answer our research questions.
 \end{enumerate}
 
 Getting an overview of PWA as a technique, and more specifically what problem areas exist, is the first step necessary to create the questions of the surveys. The chosen method for this step is a literature study on both scientific research and grey literature which aims to give the knowledge necessary to create the survey. Not all questions are based on the study however; some are purely based on the research questions or the information presented in Chapter \ref{Theory}.
 
 The first step of conducting the survey is the process of selecting which companies to contact for participation. A company suitable for participation must offer the service of mobile application development, although it is not necessary that this is their primary service. The method of finding suitable companies and the correct people in said companies to contact is to use the search function built into the business-to-business (B2B) website Clutch \cite{clutch}. Section \ref{Project_participantSelection} contains more information about this website and the exact steps taken when selecting the companies.
 
-The chosen method for data collection is as previously mentioned surveys. When contacting companies a link to the survey will be provided in the email. If a company wishes to participate in an alternative way, this can be done by scheduling a phone call in which the questions of the survey will instead be asked during an interview. If an interview is conducted, the call will be recorded and transcribed, and later added to the other survey answers. The choice of including alternative means of participation is based on our wish to increase the likelihood of companies participating in the study.
+The chosen method for data collection is as previously mentioned surveys. When contacting companies, a link to the survey will be provided in the email. If a company wishes to participate in an alternative way, this can be done by scheduling a phone call in which the questions of the survey will instead be asked during an interview. If an interview is conducted, the call will be recorded and transcribed, and later added to the other survey answers. The choice of including alternative means of participation is based on our wish to increase the likelihood of companies participating in the study.
 
 \subsection{Research Methods}
 \label{Method_methods}
@@ -276,7 +279,7 @@ The following sections each describe in more detail the methods chosen.
 
 \subsubsection{Literature Study}
 \label{Method_methods_study}
-A literature study will initiate the project by providing the information necessary to formulate the questions for the surveys. This study is to be conducted primarily on so-called grey literature, meaning articles written and published by non-academic sources. While some academic literature will be included in the study, it will be a minority because of its relative scarcity.
+A literature study will initiate the project by providing the information necessary to formulate the questions for the surveys. This study is to be conducted primarily on so-called grey literature, meaning articles written and published by non-academic sources. While some academic literature will be included in the study, it will be a minority because of its relative scarcity. Details such as precautions taken and search strings used is presented in Section \ref{Project_study}.
 
 This method was chosen since it was deemed to be the most effective way of acquiring the information needed. Alternative methods included interviewing experts in the field and conducting case studies about the pros and cons of using the technique. Both of these alternative methods were deemed to not be feasible for this project due to time constraints.
 
@@ -296,11 +299,11 @@ This section contains discussions of the reliability and validity of the project
 
 \subsubsection{Literature Study}
 \label{Method_reliabilityValidity_study}
-Since the literature study was conducted as a precursor to the construction of the survey material, from which the results could then be derived, it is somewhat important that the material that was studied was of adequate quality. Since the scientific literature on this subject is limited, grey literature needs to be used which can be argued greatly increases the risk of the results having potential problems with validity. Something that decreases this risk is that many sources of grey literature mention the same aspects of PWAs. A consensus on what the most important aspects of the technique appear to exist, so the use of grey literature becomes easier to justify. The study does not exclusively examine grey literature however, a few scientific sources are also included.
+Since the literature study was conducted as a precursor to the construction of the survey material, from which the results could then be derived, it is important that the material that was studied was of adequate quality. Since the scientific literature on this subject is so limited, grey literature needs to be used which can be argued greatly increases the risk of the results having potential problems with validity. Something that decreases this risk is that many sources of grey literature mention the same aspects of PWAs. A consensus on what the most important aspects of the technique appear to exist, so the use of grey literature becomes easier to justify. The study does not exclusively examine grey literature however, it also includes the following scientific sources \cite{dawning_of_pwa, pwa_in_modern_webdeb, pwa_unified}.
 
 \subsubsection{Surveys}
 \label{Method_reliabilityValidity_surveys}
-The results derived from the surveys will most likely suffer from both external validity and have issues with reliability. The process of selecting the companies to contact and the lecturers to contact is completely manual, meaning that the person doing the selections has an impact on which people are contacted. Additional external validity issues arise because the directory of app development companies used for finding companies to contact is owned by a business. This business might for instance change their terms of service a few months from now which could result in a substantial difference in which companies are included in the directory.
+The results derived from the surveys will most likely suffer from both external validity and have issues with reliability. The process of selecting the companies to contact and the lecturers to contact is completely manual, meaning that the person doing the selections has an impact on which people are contacted. Additional external validity issues arise because the directory of app development companies used for finding companies to contact is owned and operated by a business \cite{clutch}. This business might for instance change their terms of service a few months from now which could result in a substantial difference in which companies are included in the directory.
 
 To mitigate the problem of reliability, all steps taken in the process of selecting participants are documented in Section \ref{Project_participantSelection}. The issue of external validity will however still be present and would only be completely solved if the directory was fully static and the selection process was fully automated.
 
@@ -362,11 +365,12 @@ Programming language & Java, Kotlin & Objective-c, Swift \\
 UI frameworks & Jetpack Compose, Android UI & UIKit, SwiftUI \\
 Development Tools & Android Studio & Xcode, AppCode \\ \hline
 \end{tabular}
-\caption{Android an iOS development stack \cite{mobile_tech_stacks}}
+\caption{Android and iOS development stack \cite{mobile_tech_stacks}}
 \label{tab:devstack}
 \end{table}
 
-\subsection{Mobile Web Applications}
+\vspace{-4px}
+\subsection{Mobile Web Applications} 
 \label{Theory_mobileWebApps}
 A mobile web application is a web app that is hosted on a remote server containing logic to serve content in a specific way to mobile devices \cite{crossplatform_2012, mobile_web_apps_2013}. Contrary to a native app, a web app is not installed on a mobile device but is instead accessed through a Uniform Resource Locator (URL) over the Hypertext Transfer Protocol (HTTP), and runs exclusively in the web browser \cite{crossplatform_taxonomy, crossplatform_2012}.
 
@@ -383,6 +387,7 @@ In Figure \ref{fig:webapp}, the architecture of a web app is seen. The browser f
 	\label{fig:webapp}%
 \end{figure}
 
+\vspace{-4px}
 \subsection{Hybrid Applications}
 \label{Theory_hybridApps}
 A hybrid app is essentially a mix of the native and web approaches to app development. The app is developed using the same tools as a web app, i.e., common web technologies, instead of native tools \cite{mobile_web_apps_2013}. A hybrid app executes inside a native container, or shell, and uses the device’s browser engine to render the common web elements inside a Web View \cite{crossplatform_2012}. This shell allows the hybrid app to function just like a native app would, allowing for the two approaches to be virtually indistinguishable for users. The shell also allows for the core of the app, such as the UI elements, to be reused across multiple platforms.
@@ -400,15 +405,16 @@ In Figure \ref{fig:hybridapp}, the architecture of a hybrid app is provided. The
 	\label{fig:hybridapp}%
 \end{figure}
 
+\vspace{-4px}
 \subsection{Progressive Web Applications}
 \label{Theory_PWA}
-While progressive web apps are not a new technology per se, they are mobile web apps that follow certain best practices and conventions. Since a PWA is built with the same technologies as normal mobile web apps they share many similarities:
+While progressive web apps are not a new technology per se, these are mobile web apps that follow certain best practices and conventions. Since a PWA is built with the same technologies as normal mobile web apps they share many similarities:
 
 \begin{itemize}
-    \item a PWA can be accessed by any device with a sufficiently up-to-date web browser, making it platform-independent,
-    \item only one web app needs to be developed and maintained,
+    \item \vspace{-4px}a PWA can be accessed by any device with a sufficiently up-to-date web browser, making it platform-independent,
+    \item \vspace{-4px}only one web app needs to be developed and maintained,
     \item updates can be automatically applied without requiring additional downloads or installations,
-    \item no forced dependence on mobile storefronts.
+    \item \vspace{-4px}no forced dependence on mobile storefronts.
 \end{itemize}
 
 A PWA can be installed on a device and used like a native app, instead of being locked to a browser window like regular mobile web apps. When visiting a website, a prompt might pop up on the bottom of the screen containing the message “Add to home screen”. If the website is a PWA, clicking on the prompt will start an installation procedure which finishes with an icon appearing on the device’s home screen. This icon will then be able to launch the installed app, instead of simply being a shortcut to a website. Figure \ref{fig:twitter_pwa} depicts the visual differences between the home screen of the native Twitter Android app, Twitter Lite (PWA), and the mobile-friendly website. As expected, the mobile website and the PWA appear identical, while the native app has a slightly different appearance.
@@ -438,7 +444,7 @@ A service worker is a type of JavaScript web worker that can also act as a netwo
 
 \subsubsection{HTTPS}
 \label{Theory_PWA_HTTPS}
-On the internet, users with malicious intent can exploit essentially everything that gets sent over an unsecured connection, even data that might appear benign such as images or regular HTML. The Hypertext Transfer Protocol Secure, or just HTTPS for short, ensures that all requests to and from a website are encrypted and therefore secure \cite{why_https_matters}.
+Users with malicious intent can exploit essentially everything that is sent with the insecure Hypertext Transfer Protocol (HTTP) over the internet. Even data that might appear benign such as images or regular HTML can be exploited \cite{why_https_matters}. The Hypertext Transfer Protocol Secure, or just HTTPS for short, extends HTTP by securing all data with Transport Layer Security (TLS). TLS provides security by requiring authentication between two communicating parties, encrypting all data, and detecting if any data has been modified or corrupted during transfer \cite{secure_with_https}.
 
 While protecting the integrity of a website’s users is important, HTTPS is also a requirement for many technologies that PWAs are using. Among others, service workers and many APIs, such as the Geolocation API, are not usable without a secure HTTPS connection \cite{why_https_matters}.
 
@@ -449,6 +455,7 @@ A web app manifest is a JavaScript Object Notation (JSON) file including informa
 The manifest includes information about the name, app icon, version, and background color, among other things. Data such as the app icon and name are especially important since without them the downloaded app would not properly be displayed like native apps on the device. Another important field is the URL which dictates what page the app should show when it is launched from the shortcut \cite{mozilla_webmanifest}.
 
 A manifest file can have either the “.webmanifest” or “.json” file extensions and is linked in the head of HTML files in the web app in the same way that a CSS file would also be included \cite{mozilla_webmanifest}.
+
 
 \subsubsection{PWA Architecture}
 \label{Theory_PWA_architecture}
@@ -500,7 +507,7 @@ This chapter contains detailed descriptions of all activities performed during t
 
 \subsection{Literature Study}
 \label{Project_study}
-When searching for grey literature on the subject, Google was the search engine of choice since it is currently the most widely used search engine \cite{search_engine_stats}. The search terms used during the literature study are seen in Table \ref{tab:searchterms}. Before entering any search terms in the search engine, the precautions seen in the following list were taken:
+When searching for grey literature on the subject, Google was the search engine of choice since it is currently the most widely used search engine \cite{search_engine_stats}. The search terms used during the literature study are seen in Table \ref{tab:searchterms}. Before entering any search terms in the search engine, the precautions in the following list were taken:
 
 \begin{itemize}
     \item No Google account was signed in to avoid bias or optimizations.
@@ -525,9 +532,9 @@ ST3 & PWA cons \\
 \label{tab:searchterms}
 \end{table}
 
-The final search term, ST3, proved to be the most effective at finding the desired information since ST1 and ST2 included a greater number of results that focused on the positive aspects and advantages. For this short literature study, the disadvantages of the technique were more relevant, since a greater quantity of the questions in the survey is to focus on drawbacks and desired changes from developers. Since many of the sources included only a small number of disadvantages, 15 sources were decided upon being a fitting sample size. If the number of disadvantages in each source was greater, a smaller number of sources would have been selected.
+The search terms in table \ref{tab:searchterms} were also tested when "pros and cons" had been swapped with "advantages and disadvantages". Both alternatives gave similar results, and to keep the number of terms low only the terms seen in the table were used. The final search term, ST3, proved to be the most effective at finding the desired information since ST1 and ST2 included a greater number of results that focused on the positive aspects and advantages. For this short literature study, the disadvantages of the technique were more relevant, since a greater quantity of the questions in the survey is to focus on drawbacks and desired changes from developers. Since many of the sources included only a small number of disadvantages, 15 sources were decided upon being a fitting sample size. If the number of disadvantages in each source was greater, a smaller number of sources would have been selected. The only inclusion criteria was that the source clearly presented pros and cons of PWA, preferably in a list.
 
-When searching for scientific sources, Google Scholar was used with the “Advanced search” feature. The search results were filtered to only be from 2019 - 2021, and to include at least one of the terms “PWA” or “Progressive web app”. Additional terms such as “features”, “comparison”, “vs native”, “disadvantages” and “evaluation” were also used to further narrow the searches. Even while using some of the additional terms, relevant sources were somewhat elusive. The three sources chosen for the study were sources \cite{dawning_of_pwa, pwa_in_modern_webdeb, pwa_unified}.
+When searching for scientific sources, Google Scholar was the search engine used. By using the “Advanced search” feature, the results were filtered to only be from 2019 - 2021, and to include at least one of the terms “PWA” or “Progressive web app”. Additional terms such as “features”, “comparison”, “vs native”, “disadvantages” and “evaluation” were also added one at a time to further narrow the searches. Even while using some of the additional terms, relevant sources that had a discussion of pros and cons were very elusive. The three scientific sources chosen for the study were \cite{dawning_of_pwa, pwa_in_modern_webdeb, pwa_unified}.
 
 Once the material was analysed, many issues were identified. The issues were then grouped together based on what the perceived problem area of each issue was. These groups were then summarized into a small number of different concrete problem areas, which can be seen in Section \ref{Results_study}. The problem areas that were only mentioned in a single source were omitted.
 
@@ -621,7 +628,7 @@ DSQ 16 & If you disagree, how do you think PWAs need to change before the statem
 \label{tab:devq3}
 \end{table}
 
-\newpage Part 4 of the survey asks questions about the developers’ companies and their clients, which is seen in Table \ref{tab:devq4}. Questions 17 and 18 are purely quantitative and contribute to RQ 4 (if clients influence the decision of PWA versus other solutions). Question 19 on the other hand does not answer any research questions but is yet another additional point of discussion.
+Part 4 of the survey asks questions about the developers’ companies and their clients, which is seen in Table \ref{tab:devq4}. Questions 17 and 18 are purely quantitative and contribute to RQ 4 (if clients influence the decision of PWA versus other solutions). Question 19 on the other hand does not answer any research questions but is yet another additional point of discussion.
 
 \begin{table}[ht]
 \centering
@@ -655,6 +662,7 @@ DSQ 20 & Please rank the importance of the following qualities of mobile apps  \
 \label{tab:devq5}
 \end{table}
 
+\newpage
 \subsubsection{Education Survey Questions}
 \label{Project_surveyDesign_eduQuestions}
 The survey was divided into 5 different parts, much like the developer survey. The parts that were decided upon for the education survey were the following four:
@@ -821,8 +829,8 @@ At the website of each school, the main information that was searched for was ei
 
 If a contact person was explicitly given on the course page they were directly contacted about the survey. If no contact person was given an email asking for the contact information for the courses was sent to the school instead. Out of the total 10 courses found fit for the survey, only the contact person for one of them was not able to be reached.
 
-
 \newpage
+
 \section{Results}
 \label{Results}
 This chapter presents the results from the short literature study and the survey answers.
@@ -1296,8 +1304,6 @@ This section contains the analysis of the results gathered from the survey given
 
 \subsubsection{Part 1 - Personal Details}
 \label{Analysis_devSurvey_part1}
-The first part of the survey consisted of questions DSQ 1 - DSQ 3.
-
 Most of the respondents (14/16) were from within Europe while only 2 respondents were from outside of Europe. More specifically, 12/16 respondents were from Sweden alone. The vast difference in the response rate from the different countries might be a result of cultures and more specifically how companies treat their business email. An additional factor to consider is that Swedish companies received an email written in Swedish while the all other companies received an email written in English. The external validity of the findings is greatly impacted by the Swedish bias and it cannot be said that the results represent the broader application development industry.
 
 An additional bias in the results emerged from the responses to DSQ 2, in which respondents could choose to include the name of their company. Several respondents provided the same company name, making the results slightly skewed towards developers of one company instead of developers in general.
@@ -1306,20 +1312,19 @@ The third question asked about the age group the respondents belonged too and in
 
 \subsubsection{Part 2 - Experience}
 \label{Analysis_devSurvey_part2}
-The second part of the survey consisted of questions DSQ 4 - DSQ 7.
-
 This part of the survey was introduced by asking the developers how many years they had been in the profession and what their primary development platform currently is. These two questions will not be individually analysed in this section since they do not provide interesting data if viewed in a vacuum. These question will instead be analysed in combination with the results from DSQ 8, which can be seen in Section \ref{Analysis_devSurvey_part3}.
 
 The next question followed up by asking what type of applications the respondents had worked on before. The results show a somewhat balanced number of answers for iOS, Android, web app, and cross-platform, which indicates that the demographic had a good balance of different experiences. What is most notable is that only one respondent had ever worked on a PWA before. All questions about opinions and experiences are therefore not answered with the expertise of someone with intimate experience of actually working with PWA.
 
 The respondents who said that they had worked on cross-platform were then asked to specify which frameworks they had experience with. The different frameworks were mostly equally popular with React Native sticking out from the rest as the most popular and Xamarin as the least popular. This result was more balanced than expected, as during the process of searching for companies the most frequently mentioned framework was by far React Native. This might be a result influenced by the mostly Swedish respondents.
 
-
 \subsubsection{Part 3 - PWA}
 \label{Analysis_devSurvey_part3}
-The third part of the survey consisted of questions DSQ 8 - DSQ 16.
-
 Asking developers if they would consider developing a PWA in the future resulted in nine respondents answering Yes while seven answered No. If the individual responses are analysed by also examining DSQ 3, 4, 5, and 8 at the same time, some more interesting results emerge.  Figure \ref{fig:analysis_age} shows a clear trend that developer tends to be more negative towards developing a PWA the older they get. One can argue that this result is a reflection of broader trends in society; younger people being more open to trying new things while older people are less open to changes.
+
+An almost exact replica of this trend can be identified if the question is instead analysed in combination with years of experience, as seen in Figure \ref{fig:analysis_exp}. Analysing the results derived from combining the question with the respondents' primary development work is much easier.
+
+As seen in Figure \ref{fig:analysis_job}, iOS developers were much more likely to be against the idea of developing PWA, something that is easily explained by the knowledge of how much more restricted PWA is on iOS compared to Android. The final analysis for this question is on the results gained from combining the question with the self-reported knowledge of PWA as seen in Figure \ref{fig:analysis_know}.
 
 \begin{figure}[ht!]
     \centering
@@ -1328,16 +1333,12 @@ Asking developers if they would consider developing a PWA in the future resulted
     \label{fig:analysis_age}
 \end{figure}
 
-An almost exact replica of this trend can be identified if the question is instead analysed in combination with years of experience, as seen in Figure \ref{fig:analysis_exp}. Analysing the results derived from combining the question with the respondents' primary development work is much easier.
-
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=10cm]{img/Analysis/exp.png}
     \caption{Combination of results from DSQ 4 and DSQ 9 }
     \label{fig:analysis_exp}
 \end{figure}
-
-As seen in Figure \ref{fig:analysis_job}, iOS developers were much more likely to be against the idea of developing PWA, something that is easily explained by the knowledge of how much more restricted PWA is on iOS compared to Android. The final analysis for this question is on the results gained from combining the question with the self-reported knowledge of PWA as seen in Figure \ref{fig:analysis_know}.
 
 \begin{figure}[ht!]
     \centering
@@ -1369,8 +1370,6 @@ All respondents who disagreed were then asked to explain what they believe is ne
 
 \subsubsection{Part 4 - Your Company \& Clients}
 \label{Analysis_devSurvey_part4}
-The fourth part of the survey consisted of questions DSQ 17 - DSQ 19.
-
 The first question in this part of the survey asked if a client had ever asked for a PWA directly. As expected, a large number of the respondents did not have any knowledge about it and could not give an answer. That five developers answered Yes to the question raises some questions about how much the clients can influence the decision of underlying technology. Since only one developer had ever worked on a PWA, this answer can be interpreted as the client's suggestion not having any real influence.
 
 The question was then asked in reverse; had the developers themselves proposed PWA? Only two developers answered Yes to the question.
@@ -1379,14 +1378,11 @@ The next question asked what type of apps the respondents' companies offered. Th
 
 \subsubsection{Part 5 - Mobile Applications}
 \label{Analysis_devSurvey_part5}
-The fifth and final part of the survey consisted of one multi-part question, DSQ 20.
-
 The results seen in Table \ref{tab:devq20} are not as varied as what was originally expected. The results almost follow a descending order of importance without the need to re-arrange the order of any table rows. While the features in the question were taken from Table \ref{tab:mobilefeaturecomp}, the order was re-arranged to create one group of features better supported on native and one group of features better supported on PWA. In hindsight, it might have been better to completely randomize the ordering to avoid the potential bias from the order the rows are read. As it stands now, there is a risk that the result has been influenced by the features with better PWA support being placed last.
 
 The features that were ranked as the least important were offline usability, cross-platform support, and that the app is discoverable from a web search. All three of these are features that PWAs provide somewhat easily, and they are often mentioned as good characteristics of the tech. Important to note is that offline usability and cross-platform support were the most divisive features in the entire question since the answers were mostly evenly split apart from the spikes at both extremes. It seems like these two features were either deemed as important if the respondent was more familiar with PWA while they were deemed as quite unimportant if the respondent was primarily a native developer. With all that being said, the results are in line with what the respondents have answered in previous questions about their opinions on PWA, making the result less unexpected.
 
 The results from this question can quite easily be summarized as follows: the respondents rank features with excellent native support as more important than features with excellent PWA support.
-
 
 \subsection{Education Survey}
 \label{Analysis_eduSurvey}
@@ -1394,31 +1390,25 @@ This section contains the analysis of the results gathered from the survey given
 
 \subsubsection{Part 1 - Personal Details}
 \label{Analysis_eduSurvey_part1}
-The first part of the survey consisted of questions ESQ 1 - ESQ 5.
-
 Unsurprisingly, both respondents teach in Sweden. The intent was to send the survey to lecturers in higher education in the same countries as the developer survey. The question was left in instead of removed and can at best be a form of quality control. The results of this question can at least be interpreted as having been answered by the correct persons. The assurance that the survey had been answered by the correct persons was further strengthened by the fact that the respondents both gave the name of their institutes. Both of the answers given matched with the contact list.
 
 Despite the respondents being between the ages of 40-49 and 50-59, they had only been teaching the subjects of mobile app development for less than five years and 5-9 years respectively. Although the somewhat short experience in the subjects does not degrade the quality of the answers, the more experience the respondents have the better when it comes to their opinions given in later questions.
 
 \subsubsection{Part 2 - Mobile Applications}
 \label{Analysis_eduSurvey_part2}
-The second part of the survey consisted of questions ESQ 6 - ESQ 9.
-
 This part of the survey was introduced by asking what types of applications were covered by the respondents' courses. This question was asked to get an overview of the current coverage of application types to see if the industry matches with the education sector in terms of what applications are relevant. Since all options were selected at least once we can interpret this as the education having good and varied coverage. If more responses were gained it would have been interesting to see if the coverage would have remained equally good or if these two respondents are an anomaly.
 
 One of the respondents did not have any coverage of cross-platform apps in their courses and was asked if they think this topic should be covered in the future. Since the respondent answered "Yes" to the question, we can assume that perhaps the coverage will be even more varied in the future. The other respondent was instead asked if they covered any specific cross-platform framework in their courses, to which they answered "React Native". Since React Native was the most commonly used framework by developers, the answers to the two surveys match up in this case.
 
 Just like in the developer survey, the education survey also asked the respondents to rank the importance of mobile features and characteristics. Since there were only two respondents, the results can not be analysed in same way as the results from the same question in the developer survey. No real trends can be identified because of this. What can be said is that for the most part, the two respondents answered very similarly to each other. The only two features that differed more than one ranking were offline usability and web-search discoverability. Summarizing all the rankings given in this survey is not as easy as for the developer survey, since here the responses do not follow an easily identifiable trend. This time the results might simply be a case of personal preference instead.
 
-
 \subsubsection{Part 3 - PWA}
 \label{Analysis_eduSurvey_part3}
-The final part of the survey covered ESQ 10 - ESQ 16 and was introduced by asking how good the respondent's knowledge of PWA was, in which the respondents answered 3/5 and 4/5 respectively. This is a higher average than for the developer survey, which is something that might influence the opinions expressed about the tech to be more positive than if the knowledge would have been lower.
+The final part of the survey was introduced by asking how good the respondent's knowledge of PWA was, in which the respondents answered 3/5 and 4/5 respectively. This is a higher average than for the developer survey, which is something that might influence the opinions expressed about the tech to be more positive than if the knowledge would have been lower.
 
 Earlier the question of cross-platform coverage was asked but to get an overview of PWA in particular three additional questions were asked about its coverage. None of the respondents' courses covered PWA in any fashion; neither the curricula or literature had any coverage of it. While this answers the question of how good the coverage of PWA is, it does not give any indication as to the underlying reasons. When asked for a further explanation, one of the respondents answered that they only cover one type of cross-platform app while the other answered that they do not have any coverage of cross-platform at all. In conjunction with a question of whether the respondents think PWA should be added to their courses, the answers can be interpreted as follows: the respondents feel a need to add PWA to their courses, but do not currently have the ability to add it to their existing courses. There might be a need for adding new courses if the topic is to be covered at all.
 
 Finally, it was asked if there has been any requests to add PWA to their courses at all. Since both respondents had received such a request from collaborative sources in the industry, there appears to be a need for PWA to be covered in higher education. What raises further questions is that this need is not at all mirror by the results from the developer survey. Clear conclusions appear difficult to draw from these results.
-
 
 \subsection{Checklist of Criteria for Widespread Adoption}
 \label{Analysis_checklist}
@@ -1454,9 +1444,9 @@ This chapter discusses our findings and compares the results of this research pr
 
 \subsection{Findings \& Answers to Research Questions}
 \label{Discussion_researchQuestions}
-While the survey aimed at the education sector was originally planned to have the same scope as the developer survey, i.e., it was to be given to lecturers in different countries, it proved nigh impossible to get the information needed to find relevant lecturers in countries other than Sweden. Since finding relevant companies was equally easy for all selected countries, only the scope of the education survey was changed. The developer survey had 16 respondents while the education survey only had two respondents, as mentioned in previous chapters. The number of developers that participated in the developer survey is sufficient for drawing conclusions, but the findings are not as generalizable as was the intention at the start of the project. Since a large majority of the respondents were from Sweden, the effort to try and involve countries of different regions was not fruitful. The results of the developer survey can only be used to draw conclusions about Sweden in particular and can not be applied to the wider application development industry of the world.
+The survey aimed at the education sector was originally planned to have the same scope as the developer survey, i.e. it was to be given to lecturers in different countries. However, it proved nigh impossible to get the information needed to find relevant lecturers in countries other than Sweden. Since finding relevant companies was equally easy for all selected countries, only the scope of the education survey had to change. The developer survey had 16 respondents while the education survey only had two respondents, as mentioned in previous chapters. The number of developers that participated in the developer survey is sufficient for drawing conclusions, but the findings are not as generalizable as was the intention at the start of the project. Since a large majority of the respondents were from Sweden, the effort to try and involve countries of different regions was not fruitful. The results of the developer survey can only be used to draw conclusions about Sweden in particular and can not be applied to the wider application development industry of the world.
 
-With that said, the findings do provide enough for answering most of the research questions. From the analysis of the data from DSQ 20 and ESQ 9, it is very clear that PWA only provides partial support for the most important features and characteristics of mobile applications. Features such as the ability to be published on mobile app stores and be installed to devices were ranked as very important and have full support on PWA. However, the feature ranked as most important out of all of them was the ability to send proper push notifications; a feature not supported on PWA on iOS devices. As can be seen numerous times throughout this report, poor iOS seems to be the most crippling disadvantage of PWA compared to other solutions. All this simply means that PWA can never fully realize all of the most important features of mobile apps as long as iOS continues to poorly support the tech. It should also be mentioned that the results from the developer survey and the education survey differs slightly when it comes to the rankings of importance. Background sync, cross-platform support, and low battery usage were the outliers from the education survey. While these results differ, it might simply be a result of the on average higher level of knowledge of PWA that the lecturers had. If that is the reason for the different results, the developer survey might have had drastically different rankings had they average level of knowledge been high.
+With that said, the findings do provide enough for answering most of the research questions. From the analysis of the data from DSQ 20 and ESQ 9, it is very clear that PWA only provides partial support for the most important features and characteristics of mobile applications. Features such as the ability to be published on mobile app stores and be installed to devices were ranked as very important and have full support on PWA. However, the feature ranked as most important out of all of them was the ability to send proper push notifications; a feature not supported on PWA on iOS devices. As can be seen numerous times throughout this report, poor support on iOS seems to be the most crippling disadvantage of PWA compared to other solutions. All this simply means that PWA can never fully realize all of the most important features of mobile apps as long as iOS continues to poorly support the tech. It should also be mentioned that the results from the developer survey and the education survey differs slightly when it comes to the rankings of importance. Background sync, cross-platform support, and low battery usage were the outliers from the education survey. While these results differ, it might simply be a result of the on average higher level of knowledge of PWA that the lecturers had. If that is the reason for the different results, the developer survey might have had drastically different rankings had they average level of knowledge been high.
 
 By looking at Figure \ref{fig:analysis_issues} it is evident that the respondents do experience the same problems as described in the literature, at least to some degree. While the frequency of the issues differs, all issues have some overlap. This result does not give a definitive all-encompassing answer to the question however, since most of the developers lacked actual experience of developing PWA. The only thing the results can tell us is that developers with experience of \textit{using} a PWA do experience the same problems as the literature describes. Missing is still the answer of whether PWA developers experience the same issues or not. A partial answer seems to be the best we can get from our results
 
@@ -1488,13 +1478,13 @@ This chapter contains a summary of the discussion and conclusions, as well as su
 
 \subsection{Summary of Conclusions}
 \label{Conclusions_summary}
-This research project has taken a closer look into the opinions that mobile app developers and lecturers in higher education have about Progressive Web Applications. Before the project began, our suspicion was that PWA was under-utilized in the industry and that the knowledge that app developers have about the tech was poor. This suspicion was based findings from the, admittedly very limited, academic research previously conducted on this topic.
+This research project has taken a closer look into the opinions that mobile app developers and lecturers in higher education have about Progressive Web Applications. Before the project began, our suspicion was that PWA was under-utilized in the industry and that the knowledge that app developers have about the tech was poor. This suspicion was based on findings from the, admittedly very limited, academic research previously conducted on this topic.
 
 To start the investigation of whether PWA deserves broader utilization or not we first conducted a literature study. The study found that PWA has many advantages over native applications, but that even though the disadvantages are few they are quite severe. The knowledge gained from the study was used to help create the questions for the surveys.
 
 There were two surveys conducted; one answered by mobile app developers and one answered by lecturers in higher education in Sweden. The developer survey received a total of 16 responses (12 of which were Swedish developers) while the education survey only received two responses. From the surveys we found that developers' knowledge of PWA was very poor and that their general opinions on the tech was mostly negative. Developers with a higher level of knowledge had a tendency to have more positive opinions of PWA.
 
-This project has contributed to the general knowledge of PWA and could be of interest to not only the industry of application developers but also lecturers in higher education. By highlighting what the current issues that face PWA are in conjunction with the opinions of tech, we want to encourage the technology to be further developed to become the best it can be. To make the necessary improvements more concrete, a short checklist containing the biggest issues has been provided and ordered according to the perceived importance of each issue.
+This project has contributed to the general knowledge of PWA and could be of interest to not only the industry of application developers but also lecturers in higher education. By highlighting what issues with PWA exist today and the opinions of the technology in the industry, we want to encourage the technology to be further developed to become the best it can be. To make the necessary improvements more concrete, a short checklist containing the biggest issues has been provided and ordered according to the perceived importance of each issue.
 
 The validity and significance of the findings in this report are negatively impacted by the low response rate by developers that were not from Sweden as well as the low response rate of the lecturers. The main improvement to this study would be more aggressive when trying to receive responses to increase the total number of participants in the study.
 
@@ -1532,7 +1522,7 @@ Finally, a study could be conducted about PWA from the perspective of a client t
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.5}
 
-\section{Appendix A - Developer Survey}
+\section{Appendix A - Full Developer Survey}
 \label{Appendix_devSurvey}
 
 \textbf{\textit{Part 1 - Personal Details}}
@@ -1725,7 +1715,7 @@ Finally, a study could be conducted about PWA from the perspective of a client t
 \textbf{If you have any feedback about the survey or just want to add some final thoughts, please do so here}
 
 \newpage
-\section{Appendix B - Education Survey}
+\section{Appendix B - Full Education Survey}
 \label{Appendix_eduSurvey}
 
 \textbf{\textit{Part 1 - Personal Details}}
@@ -1890,8 +1880,12 @@ Finally, a study could be conducted about PWA from the perspective of a client t
 \textbf{If you have any feedback about the survey or just want to add some final thoughts, please do so here}
 
 \newpage
-\section{Appendix C - DSQ 20 Diagrams}
+\section{Appendix C - Additional Diagrams, Developer Survey}
 \label{Appendix_devMultiDiagrams}
+
+For all diagrams in this appendix, the vertical axis means "number of responses" to that specific survey sub-question.
+
+\vspace{-10px}
 
 \begin{figure}[ht!]
     \centering
@@ -1899,6 +1893,8 @@ Finally, a study could be conducted about PWA from the perspective of a client t
     \caption{Answers for DSQ 20, part 1}
     \label{fig:res_devq20_1}
 \end{figure}
+
+\vspace{-10px}
 
 \begin{figure}[ht!]
     \centering
@@ -1960,8 +1956,11 @@ Finally, a study could be conducted about PWA from the perspective of a client t
 
 \newpage
 
-\section{Appendix D - ESQ 9 Diagrams}
+\section{Appendix D - Additional Diagrams, Education Survey}
 \label{Appendix_eduMultiDiagrams}
+For all diagrams in this appendix, the vertical axis means "number of responses" to that specific survey sub-question.
+
+\vspace{-10px}
 
 \begin{figure}[ht!]
     \centering
@@ -1969,6 +1968,8 @@ Finally, a study could be conducted about PWA from the perspective of a client t
     \caption{Answers for ESQ 9, part 1}
     \label{fig:res_eduq9_1}
 \end{figure}
+
+\vspace{-10px}
 
 \begin{figure}[ht!]
     \centering
